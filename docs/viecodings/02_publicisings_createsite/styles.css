@@ -1,0 +1,58 @@
+body {
+    overflow-x: hidden;
+    background-color: #f4f6f9;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin .25s ease-out;
+    width: 15rem;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    width: 100%;
+}
+
+body.sb-sidenav-toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+/* Sidebar Menu Items */
+.list-group-item {
+    border: none;
+    padding: 15px 20px;
+}
+.list-group-item:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+
+/* Hero Banner */
+.hero-header {
+    background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.6)), url('https://source.unsplash.com/1600x900/?animals,nature');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Cards */
+.animal-card {
+    transition: transform 0.3s;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.animal-card:hover {
+    transform: translateY(-5px);
+    border-color: #0056b3;
+}
